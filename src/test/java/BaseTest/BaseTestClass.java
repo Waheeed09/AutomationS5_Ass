@@ -1,7 +1,6 @@
 package BaseTest;
 
-import Pages.FormAuthPage;
-import Pages.HomePage;
+import Pages.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
@@ -12,6 +11,9 @@ public class BaseTestClass {
     WebDriver driver;
     protected HomePage homePage;
     protected FormAuthPage formAuthPage;
+    protected CheckBoxPage checkBoxPage;
+    protected DropdownPage dropdownPage;
+    protected AddRemovePage addRemovePage;
     @BeforeClass
     public void setup(){
         driver = new FirefoxDriver();

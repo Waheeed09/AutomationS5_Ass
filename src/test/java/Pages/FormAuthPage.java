@@ -14,8 +14,8 @@ public class FormAuthPage {
     By userNameLocator = By.id("username");
     By passwordLocator = By.id("password");
     By loginButtonLocator = By.className("radius");
-    String expectedUserNameFailedMsg = " Your username is invalid!";
-    String expectedPasswordFailedMsg = " Your password is invalid!";
+    String expectedUserNameFailedMsg = "Your username is invalid!";
+    String expectedPasswordFailedMsg = "Your password is invalid!";
     By actualErrorMsgLocator = By.id("flash");
 
     public void setUserName(String userName){
