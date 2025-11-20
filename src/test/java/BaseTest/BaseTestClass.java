@@ -1,6 +1,7 @@
 package BaseTest;
 
 import Pages.*;
+import Pages.DynamicLoadingPackage.DynamicLoadingPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
@@ -14,6 +15,8 @@ public class BaseTestClass {
     protected CheckBoxPage checkBoxPage;
     protected DropdownPage dropdownPage;
     protected AddRemovePage addRemovePage;
+    protected DynamicLoadingPage dynamicLoadingPage;
+    protected JavaScriptAlertsPage javaScriptAlertsPage;
     @BeforeClass
     public void setup(){
         driver = new FirefoxDriver();
